@@ -1,0 +1,22 @@
+.body {
+    background-image: url('../img/img1.jpg');
+    background-size: cover;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+
+
+}
+
+.containerIngreso {
+    background-image: url('../img/img1.jpg');
+    border-radius: 10px;
+    box-shadow: 0 0 8px black;
+
+}
+
+.containerRegistro {
+    background-color: #73060677;
+    border-radius: 10px;
+    box-shadow: 0 0 8px black;
+}
