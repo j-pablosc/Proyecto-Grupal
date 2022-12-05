@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+.main {
+    background-color: #1f1f1f;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 0 0 8px black;
+
+}
+
+.img {
+    width: 730px;
+    height: 180px;
+        border-radius: 2%;
+}
+
+.h2 {
+    font-size: 50px;
+    color:antiquewhite;
+
+}
+.h3{
+    color:antiquewhite;
+}
+
+.h5{
+    color:antiquewhite;
+}
+.p{
+    color:antiquewhite;
+}
+
+
+
+
+.box1 {
+    background-color: #0b0b0b;
+    border-radius: 2px;
+
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 80px;
+  
+
+}
+
+
+
+
+
+
+
+
+.form {
+    width: fit-content;
+    margin: auto;
+}
+
+.itemForm {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.itemForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.itemForm input,
+.itemForm textarea {
+    background-color: beige;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.itemForm textarea {
+    resize: vertical;
+}
+
+.itemForm input::placeholder {
+    color: gray;
+}
+
+.itemForm input:hover {
+    background-color: #730606;
+}
+
+.itemForm input:focus,
+.itemForm textarea:focus {
+    border-bottom: 1px solid #730606;
+}
+
+.btnForm {
+    border: none;
+    color: #f0f0f0;
+    background-color: #730606;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: auto;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+.btnForm:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+}
+
+.h1 {
+    font-size: 50px;
+
+}
+
+.tyc{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}

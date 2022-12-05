@@ -1,0 +1,8 @@
+.img:hover{
+    transform: scale(1.07);
+}
+
+.tyc{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}

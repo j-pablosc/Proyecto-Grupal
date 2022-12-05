@@ -32,7 +32,7 @@ formIngreso.addEventListener("submit", function (event) {
 
 
     if ((saveUser === userName) && (savePassword === userPassword)) {
-        window.location.href = "./src/page/home.html"
+        window.location.href = "./home.html"
     } else {
         alert('El nombre o la contraseña no coincide')
     }
@@ -48,7 +48,7 @@ formRegistro.addEventListener("submit", function (event) {
     localStorage.setItem("userPassword", userPassword)
     localStorage.setItem("userName", userName)
 
-    window.location.href = "./index.html"
+    window.location.href = "./registro.html"
 
 })
 

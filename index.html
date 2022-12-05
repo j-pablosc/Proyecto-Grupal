@@ -1,135 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<link rel="stylesheet" href="./src/style/style.css">
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/style/home.css" />
+    <title>HOME</title>
 </head>
-<body class="body">
-    
-<!-- Ingreso -->
-<div class="containerIngreso" id="contaIngreso">
 
-    <!-- Titulo -->
-
-    <div class="container">
-        <div class="row text-center my-5">
-            <div class="col-12">
-                <h2 class="text-white">Ingresa</h2>
+<body class="bg-black">
+    <div class="containerMenu">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand text-white" href="#"><img class="logo" src="./src/img/logo3.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarNav">
+                <ul class="navbar-nav p-4 ul">
+                    <li class="nav-item active li">
+                        <a class="nav-link text-white p-4 a" href="#">Home</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-8">
-
-            <!-- Formulario Ingreso -->
-
-            <form id="formIngreso" class="">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-8 col-sm-8">
-                            <div class="mb-3">
-                                <label for="exampleInputName1" class="form-label text-white">Name</label>
-                                <input type="text" class="form-control" required id="exampleInputName1"
-                                    aria-describedby="NameHelp" placeholder="Ingresa tu nombre" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label text-white">Password</label>
-                                <input type="password" class="form-control" required id="exampleInputPassword1"
-                                    placeholder="Ingresa tu contraseña" />
-                            </div>
-                            <button type="submit" class="btn btn-dark" id="btnI">
-                                Submit
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-            <!-- Termina formulario Ingreso -->
-
-            <div class="container">
-                <div class="row justify-content-center my-4">
-                    <div class="col-8 col-sm-8">
-                        <div class="alert alert-dark" role="alert">
-                            ¿No tienes una cuenta aún?
-                            <button class="btn btn-dark" id="btnRegistro">
-                                Registrate aqui
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Termina container ingreso -->
-
-
-<!-- Registro -->
-<div class="containerRegistro d-none" id="contRegistro">
-
-    <!-- Titulo -->
-    <div class="container">
-        <div class="row text-center my-5">
-            <div class="col-12">
-                <h1 class="text-white">Registro</h1>
-            </div>
-        </div>
+            <button class="boton" type="submit" id="btnIngreso">INGRESAR</button>
+        </nav>
     </div>
 
-    <!-- Formulario Registro -->
+    <!-- Fin del header -->
+    <div class="bg-img">
 
-    <form id="formRegistro">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8 col-sm-8">
-                    <!-- Nombre -->
-                    <div class="mb-3">
-                        <label for="exampleInputName1" class="form-label text-white">Name</label>
-                        <input type="text" class="form-control" required id="exampleInputName2"
-                            aria-describedby="NameHelp" placeholder="Ingresa tu nombre" />
-                    </div>
-                    <!-- Fin nombre -->
-
-                    <!-- Contraseña -->
-                    <div class="mb-3"></div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label text-white">Password</label>
-                        <input type="password" class="form-control" required id="exampleInputPassword2"
-                            placeholder="Ingresa una contraseña" />
-                    </div>
-                    <!-- Fin ontraseña -->
-
-                    <button type="submit" class="btn btn-dark" id="btnR">
-                        Submit
-                    </button>
-                </div>
-            </div>
-        </div>
-    </form>
-    <!-- Termina formulario registro -->
-
-    <div class="container">
-        <div class="row justify-content-center my-4">
+        <div class="row justify-content-around">
             <div class="col-8 col-sm-8">
-                <div class="alert alert-dark" role="alert">
-                    ¿Ya tienes una cuenta?
-                    <button class="btn btn-dark" id="btnIngreso">
-                        Ingresa aqui
-                    </button>
+
+                <!-- Inicio Carrusel -->
+                <div class="containerPrincipal row justify-content-center">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner p-4 estiloCarrusel">
+                            <div class="carousel-item active">
+                                <img src="./src/img/1.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/img/2.4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/img/3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/img/4.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/img/5.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/img/6.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/img/7.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/img/8.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin del Carrusel -->
+
+                <br>
+
+                <!-- inicio cards -->
+                <div class="row justify-content-md-around g-1">
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img2.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8  ">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white">TREN BALA</h5>
+                                    <p class="card-text text-white">
+                                        Titulo en ingles: Bullet Train <br>
+                                        Genero: Acción y suspenso</p>
+                                    <p class="card-text"><small class="text-muted">Estreno: 5-Agto-2022 </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img3.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white">Pantera Negra:Wankanda Por Siempre</h5>
+                                    <p class="card-text text-white"> Titulo en ingles: Black Panther: Wakanda
+                                        Forever <br>
+                                        Genero: Accion, Aventura, Ciencia Ficcion, Drama</p>
+                                    <p class="card-text"><small class="text-muted">Estreno: 10-Nov-2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img4.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white">Lilo, lilo, Cocodrilo</h5>
+                                    <p class="card-text text-white"> Titulo en ingles: Lyle, Lyle, Cocodrile <br>
+                                        Genero: Musical</p>
+                                    <p class="card-text"><small class="text-muted">Estreno: 27-Oct-2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img5.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white">Océanos:</h5>
+
+                                    <p class="card-text text-white">Titulo en ingles:Océans <br> Genero: Documental
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Estreno: 27-Ene-2010</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img6.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white">Top Gun</h5>
+                                    <p class="card-text text-white">
+                                        Titulo en ingles: Top Gun Maverick <br>
+                                        Genero: Accion, Drama</p>
+                                    <p class="card-text"><small class="text-muted"> Estreno: 27-My-2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img7.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Mundo Extraño</h5>
+                                    <p class="card-text text-white">Titulo en ingles: Strange World <br>
+                                        Genero: Animacion</p>
+                                    <p class="card-text"><small class="text-muted">Estreno: 24-Nov-2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img8.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white">La Luz del Diablo</h5>
+                                    <p class="card-text text-white">Titulo en ingles: Prey for the Devil <br>
+                                        Genero: Suspenso, Terror</p>
+                                    <p class="card-text"><small class="text-muted">Estreno: 27-Oct-2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./src/img/img9.jpg" class="img-fluid rounded-start img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white">Black Adam</h5>
+                                    <p class="card-text text-white">
+                                        Titulo en ingles: Black Adam <br>
+                                        Genero: Accion, DC Comics, Fantasia</p>
+                                    <p class="card-text"><small class="text-muted">Estreno: 27-Oct-2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Termina container ingreso -->
+    </div>
+    <!-- Fin cards -->
 
 
-    <script src="./src/js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Images -->
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./src/img/2.2.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./src/img/3.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./src/img/4.2.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./src/img/5.1.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./src/img/7.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./src/img/8.1.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Images -->
+            <br>
+            <br>
+
+            <!-- Section: Form -->
+
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <small class="tyc">TERMINOS Y CONDICIONES: EL CLIENTE ACEPTA QUE EL USO DE LA MEMBRESÍA GOLD (PLAN DE
+                    FIDELIZACIÓN DE CINEMA COLOMBIA S.A.S.) ESTÁ SUJETA A LOS SIGUIENTES TÉRMINOS Y CONDICIONES DE USO
+                    LOS CUALES SE PIDE A LOS USUARIOS Y POTENCIALES USUARIOS LEER CON ATENCIÓN.
+                </small>
+            </section>
+            <!-- Section: Text -->
+
+      <!-- Section: Links -->
+      <section class="p-4">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div> <img  class="logo-redes" src="./src/img/logo.facebook.png" alt=""></div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div><img  class="logo-redes" src="./src/img/logo.instagram.png" alt=""></div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        © 2020 Copyright:
+                        <a class="text-white" href="https://mdbootstrap.com/" target="_blank">MDBootstrap.com</a>
+                    </div>
+                    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- scripts -->
+    <script src="./src/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
